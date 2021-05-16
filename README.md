@@ -115,4 +115,34 @@ Answer: B
 Analysis：
 m/n + n/m= ((m+n)-2-2mn) /mn =( 22-2*(-5))/(-5) = -14/5  
 This question examines the addition and subtraction of fractions. In addition, and subtraction of fractions, if it is a fraction with the same denominator, then the denominator is unchanged, and the numerators can be added and subtracted directly; if it is a fraction with a different denominator, you must first divide the fraction and turn the different denominator into the same fraction. The denominator fraction, and then add and subtract.
+
+>LEVEL3:  
+>Q1:The solution of the unary linear equation 3=x-2 is:  
+A．x=5  
+B．x=-5  
+C．x=1  
+D．x=-1  
+Answer：A
+
+>Q2: The smaller root of the equation x^2-2x-2=0 is x1. The following estimate of x1 is correct:  
+A.-2＜x1＜-1  
+B.-1＜x1＜0  
+C.0＜x1＜1  
+D.1＜x1＜2  
+Answer：B  
+Analysis：x2-2x-2=0，  
+x2-2x=2  
+x2-2x+1=3  
+（x-1)^2=3， 
+x1=1-√3 ，x2=1+√3；  
+∵1＜√3＜2，即-2＜-√3＜-1，  
+∴-1＜1-√3＜0，即-1＜x1＜0；  
+
+>Q3:〖3x〗^2+2x+1=0 (a≠0) The quadratic term is:  
+A: 2x  
+B: 〖3x〗^2  
+C: 1  
+Answer：B
+
+
 ***

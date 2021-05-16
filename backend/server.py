@@ -81,13 +81,13 @@ def loadQ1():
    if request.method == 'POST':
       lst = [
          {"question": "The square root of 9 is",
-          "c1": "3", "c2": '-3', 'c3': '4', 'c4': '-4', 'qid': 'q1', 'aQ': '3'},
+          "c1": "3", "c2": '-3', 'c3': '4', 'c4': '-4', 'qid': 'q1', 'aQ': '3','ana':'3^2 is 9 and answer can not be nagetive'},
          {"question": "If the split 1/(x-3) makes sense, x cannot be taken",
-          "c1": "3", "c2": '-3', 'c3': '0', 'c4': '6', 'qid': 'q2', 'aQ': '3'},
-         {"question": "When a=-1, (a+1)/(a^2-1) will be",
-          "c1": "no sense", "c2": '0', 'c3': '1', 'c4': '-1', 'qid': 'q3', 'aQ': 'no sense'},
-         {"question": "m + n = 2, nm= -5, m/n + n/m will be",
-          "c1": "-14/5", "c2": '-13/5', 'c3': '-12/5', 'c4': '-11/5', 'qid': 'q4', 'aQ': '-14/5'},
+          "c1": "3", "c2": '-3', 'c3': '0', 'c4': '6', 'qid': 'q2', 'aQ': '3','ana':'∴x-3≠0，The solution is x≠3. So, choose A.'},
+         {"question": "(a+1)/(a^2-1) will be",
+          "c1": "no sense", "c2": '0', 'c3': '1', 'c4': '-1', 'qid': 'q3', 'aQ': 'no sense','ana':'(1) The condition that the fraction is meaningful: the denominator cannot be 0;(2) The condition that the fraction is meaningless: the denominator is equal to 0.(3) The condition for the fraction value to be 0: if the denominator is not equal to 0, and the numerator is equal to 0, the fraction value is 0.'},
+         {"question": "m + n = 2, nm= -5",
+          "c1": "-14/5", "c2": '-13/5', 'c3': '-12/5', 'c4': '-11/5', 'qid': 'q4', 'aQ': '-14/5','ana':'m/n + n/m= ((m+n)-2-2mn) /mn =( 22-2*(-5))/(-5) = -14/5 This question examines the addition and subtraction of fractions. In addition, and subtraction of fractions, if it is a fraction with the same denominator, then the denominator is unchanged, and the numerators can be added and subtracted directly; if it is a fraction with a different denominator, you must first divide the fraction and turn the different denominator into the same fraction. The denominator fraction, and then add and subtract.'},
       ]
       return jsonify(lst)
 

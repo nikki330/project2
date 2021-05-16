@@ -43,7 +43,11 @@ Front-end development process:
 ***
 ### Answers to sample questions:
 After learning, we can test, some of the answers are as follows. 
+<<<<<<< HEAD
 >LEVEL1 
+=======
+>level1  
+>>>>>>> e9191c80883895f62806b766d763694f0b7fa9b6
 >Q1: The square root of 9 is  
 >A.3  
 >B.-3  
@@ -56,9 +60,15 @@ After learning, we can test, some of the answers are as follows.
 >C.0  
 >D.6  
 >Answer: A  
+<<<<<<< HEAD
 Analysis： 
 ∴x-3≠0，The solution is x≠3.
 So, choose A.
+=======
+Analysis： 
+∴x-3≠0，The solution is x≠3.
+So, choose A.
+>>>>>>> e9191c80883895f62806b766d763694f0b7fa9b6
 
 >Q3: When a=-1, (a+1)/(a^2-1) will be  
 >A.no sense  
@@ -66,9 +76,15 @@ So, choose A.
 >C.1  
 >D.-1  
 >Answer: A  
+<<<<<<< HEAD
 Analysis：(1) The condition that the fraction is meaningful: the denominator cannot be 0;
 (2) The condition that the fraction is meaningless: the denominator is equal to 0.
 (3) The condition for the fraction value to be 0: if the denominator is not equal to 0, and the numerator is equal to 0, the fraction value is 0.
+=======
+Analysis：(1) The condition that the fraction is meaningful: the denominator cannot be 0;
+(2) The condition that the fraction is meaningless: the denominator is equal to 0.
+(3) The condition for the fraction value to be 0: if the denominator is not equal to 0, and the numerator is equal to 0, the fraction value is 0.
+>>>>>>> e9191c80883895f62806b766d763694f0b7fa9b6
 
 >Q4: m + n = 2, nm = -5, m/n + n/m will be  
 >A. -14/5  
@@ -76,6 +92,7 @@ Analysis：(1) The condition that the fraction is meaningful: the denominator ca
 >C. -12/5  
 >D. -11/5  
 >Answer: A  
+<<<<<<< HEAD
 Analysis：
 m/n + n/m= ((m+n)-2-2mn) /mn =( 22-2*(-5))/(-5) = -14/5  
 This question examines the addition and subtraction of fractions. In addition, and subtraction of fractions, if it is a fraction with the same denominator, then the denominator is unchanged, and the numerators can be added and subtracted directly; if it is a fraction with a different denominator, you must first divide the fraction and turn the different denominator into the same fraction. The denominator fraction, and then add and subtract.
@@ -106,4 +123,7 @@ B.〖3x〗^2
 C. 1  
 D. -1  
 Answer: B   
+Analysis：
+m/n + n/m= ((m+n)-2-2mn) /mn =( 22-2*(-5))/(-5) = -14/5  
+This question examines the addition and subtraction of fractions. In addition, and subtraction of fractions, if it is a fraction with the same denominator, then the denominator is unchanged, and the numerators can be added and subtracted directly; if it is a fraction with a different denominator, you must first divide the fraction and turn the different denominator into the same fraction. The denominator fraction, and then add and subtract.
 ***

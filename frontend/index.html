@@ -25,7 +25,9 @@
           loadModalLoginForm()
           loadModalRegisterForm()
           addComponent()
-          
+          if ($.session.get('userId')){
+            loadCenter()
+          }
         })
     </script>
   </head>

@@ -24,6 +24,7 @@ function ajaxLogin(l_u,l_p){//r_u is username, r_p is password
                 console.log($.session.get('userId'))
                 Alerting(result.resultType,result.resultMessage)
                 loadCenter()
+                location.reload(true)
             }
 
         },

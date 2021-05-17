@@ -99,7 +99,9 @@ function tryQuiz2(){
                         }else{
                             var sign = "<div class='alert alert-danger' role='alert'>"+
                             "    wrong answer"+
+                           
                             "</div>"
+                            ""
                         }
                         $("#"+result[i].qid+"").html((
    

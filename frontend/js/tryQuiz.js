@@ -98,7 +98,8 @@ function tryQuiz(){
                             correctNum += 1
                         }else{
                             var sign = "<div class='alert alert-danger' role='alert'>"+
-                            "    wrong answer"+ ""+result[i].ana+""
+                            "    wrong answer"+
+                            ""+result[i].ana+""+
                             "</div>"
                         }
                         $("#"+result[i].qid+"").html((

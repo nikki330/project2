@@ -21,8 +21,24 @@
     <script src="js/tryQuiz2.js"></script>
     <script type='text/javascript'>
         $(document).ready(function(){
-          loadDropdown()
+          if ($.session.get('userId')){
+            console.log('yes')
+            $('#log').html('')
+            $('#log').html(("<button id='logoutButton' type='button' class='btn btn-primary'>"+
+            "  Logout"+
+            "</button>"))
+            $('#logoutButton').on('click',function(){
+              $.session.clear();
+              $(location).attr('href', 'index.html');
+              location.reload(true)
+            })
+            
+        }else{
+          $('#log').append("<div id='loadModalLoginForm'></div>")
           loadModalLoginForm()
+        }
+          loadDropdown()
+          
           loadModalRegisterForm()
           addContent2()
           tryQuiz2()
@@ -39,12 +55,28 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
     <div class = "container">
-      <nav class="nav">
-        <div class="dropdown" id='quickStart'></div>
-        <a class="nav-link active" href="#">Active</a>
-        <div id = 'loadModalLoginForm'></div>
-        <div id = 'loadModalRegisterForm'></div>
-        <div id = "Alerting"></div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+            <li class="nav-item active">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <div id='center'></div>
+            <li class="nav-item dropdown">
+              <div id="registeredWarning"></div>
+              
+            </li>
+            
+          </ul>
+          <div id='log'>
+            
+          </div>
+           
+          
+          &nbsp;
+          <div id='loadModalRegisterForm'></div>
+        </div>
       </nav>
       <div id='Content2'></div>
       <button id ='quiz2' class="btn btn-primary">test it</button>

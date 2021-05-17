@@ -22,6 +22,7 @@ Front-end development process:
 >8. The user interface is modified and the page arrangement is updated to make the appearance look more tidy.
 >9. Further modifications and adjustments to the front-end visual design and quality.
 >10. The README file updated the description and description and group details.
+
 Back-end development process:
 >1. Make a preliminary structural plan, mainly involving the relationship between the database architecture and tables, and create a database form.
 >2. Initialize <b>server.py</b> to start the project and create the routing required for the project (registration, login, etc.).

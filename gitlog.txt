@@ -1,3 +1,52 @@
+commit fd40b755a005c5e7502afc0b6bec494ed0097a67
+Author: QIANRU XU <23023155@student.uwa.edu.au>
+Date:   Mon May 17 17:50:07 2021 +0800
+
+    update readme
+
+commit 8e3e5a4f9ae36a842e1ebf116e7d4d97ded6ea79
+Author: QIANRU XU <23023155@student.uwa.edu.au>
+Date:   Mon May 17 17:44:55 2021 +0800
+
+    update
+
+commit f5f25fc5b8099b78529885de5666eb6261de84bb
+Author: QIANRU XU <23023155@student.uwa.edu.au>
+Date:   Mon May 17 13:50:09 2021 +0800
+
+    modify index
+
+commit 3443e352560db123cc9c3acb56519d3366365634
+Author: QIANRU XU <23023155@student.uwa.edu.au>
+Date:   Mon May 17 12:30:23 2021 +0800
+
+    add analysis
+
+commit d0d85c8241ffed9cc9afd2bbe1e7f0262c9b7524
+Merge: f3077f9 160719e
+Author: QIANRU XU <23023155@student.uwa.edu.au>
+Date:   Mon May 17 10:54:28 2021 +0800
+
+    Merge branch 'main' of https://github.com/nikki330/project2 into main
+
+commit f3077f90a0ae32414dd2a8d87a78c36164fff3af
+Author: QIANRU XU <23023155@student.uwa.edu.au>
+Date:   Mon May 17 10:53:34 2021 +0800
+
+    push gitlog
+
+commit 160719ef3b1db215b3955001703464f017edac14
+Author: nikki330 <69797147+nikki330@users.noreply.github.com>
+Date:   Mon May 17 10:43:42 2021 +0800
+
+    Update README.md
+
+commit 184e9e6737c33df08d386b71c309891023f3abc8
+Author: nikki330 <69797147+nikki330@users.noreply.github.com>
+Date:   Mon May 17 10:41:49 2021 +0800
+
+    Update README.md
+
 commit 82c2717d93b9986b763fdec9f533c9ca4e7b0c21
 Author: QIANRU XU <23023155@student.uwa.edu.au>
 Date:   Mon May 17 10:36:11 2021 +0800
@@ -89,3 +138,4 @@ Author: nikki330 <69797147+nikki330@users.noreply.github.com>
 Date:   Fri Apr 30 23:10:06 2021 +0800
 
     Initial commit
+

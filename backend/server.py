@@ -1,7 +1,7 @@
 from flask import Flask,jsonify,request,session
 from flask_cors import CORS, cross_origin
 from flask_sqlalchemy import SQLAlchemy
-
+#Import related data package 
 import os
 import json
 app = Flask(__name__)
@@ -14,7 +14,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///user.db'
 
 db = SQLAlchemy(app)
 
-
+#set up user database
 class UserDb(db.Model):
    id = db.Column(db.Integer,primary_key = "True")
    userName = db.Column(db.String(200),nullable = False)
@@ -30,10 +30,10 @@ class UserDb(db.Model):
 
 #python enter python terminal environment
 #from server import db
-#db.create_all() create database user.db, create table UserDb
+#db.create_all() create database user.db, create table UserDb #create a db
 
 @app.route('/registered',methods=['POST','GET'])
-def registered():
+def registered(): #user registered
    if request.method == 'POST':
       r_u = request.form['r_u']
       r_p = request.form['r_p']
@@ -53,14 +53,14 @@ def registered():
             user.l2_marks = 0
             user.l3_marks = 0
             user.l4_marks = 0
-            db.session.add(user)
+            db.session.add(user) #add word
             db.session.commit()
          except:
             return jsonify(resultMessage='there was a error to registered',resultType="error")
       return jsonify(resultMessage='Registered successfully',resultType='success')
 
 @app.route('/login',methods=['POST','GET'])
-def login():
+def login():#set up user login when username and password exist in the database, the login is successful
    if request.method == 'POST':
       session.permenant = True
       l_u = request.form['l_u']
@@ -77,7 +77,7 @@ def login():
          return jsonify(resultMessage='There is no matching username and password', resultType='warning')
 
 @app.route('/loadQ1',methods=['POST','GET'])
-def loadQ1():
+def loadQ1():#related question
    if request.method == 'POST':
       lst = [
          {"question": "The square root of 9 is",
@@ -89,7 +89,7 @@ def loadQ1():
          {"question": "m + n = 2, nm= -5",
           "c1": "-14/5", "c2": '-13/5', 'c3': '-12/5', 'c4': '-11/5', 'qid': 'q4', 'aQ': '-14/5','ana':'m/n + n/m= ((m+n)-2-2mn) /mn =( 22-2*(-5))/(-5) = -14/5 This question examines the addition and subtraction of fractions. In addition, and subtraction of fractions, if it is a fraction with the same denominator, then the denominator is unchanged, and the numerators can be added and subtracted directly; if it is a fraction with a different denominator, you must first divide the fraction and turn the different denominator into the same fraction. The denominator fraction, and then add and subtract.'},
       ]
-      return jsonify(lst)
+      return jsonify(lst) 
 
 
 
@@ -139,7 +139,7 @@ def loadQ4():
       return jsonify(lst)
 
 @app.route('/loadUserCenter',methods=['POST','GET'])
-def loadUserCenter():
+def loadUserCenter(): #return data
    if request.method == 'POST':
       l_u = request.form['l_u']
       l_p = request.form['l_p']
@@ -155,7 +155,7 @@ def loadUserCenter():
          return jsonify(resultMessage='There is no matching username and password', resultType='warning')
 
 @app.route('/updateMark',methods=['POST','GET'])
-def updateMark():
+def updateMark(): #compare mark
    if request.method == 'POST':
       l_u = request.form['l_u']
       l_p = request.form['l_p']
@@ -199,6 +199,6 @@ def ifLogin():
    return jsonify(result='yes')
 
 
-
+#runing
 if __name__ == '__main__':
    app.run()

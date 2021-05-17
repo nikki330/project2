@@ -22,6 +22,16 @@ Front-end development process:
 >8. The user interface is modified and the page arrangement is updated to make the appearance look more tidy.
 >9. Further modifications and adjustments to the front-end visual design and quality.
 >10. The README file updated the description and description and group details.
+Back-end development process:
+>1. Make a preliminary structural plan, mainly involving the relationship between the database architecture and tables, and create a database form.
+>2. Initialize <b>server.py</b> to start the project and create the routing required for the project (registration, login, etc.).
+>3. Establish a user database, set up user information for registration and login.
+>4. Compare the information with the database, if there is matching data, the login is successful.
+>5. Set up four level questions.
+>6. The answer information is sent to the front end through the back end, and the answer information is compared.
+>7. Users can view their answers, scoring and analysis through feedback.
+>8. The normal operation of the program.
+>9. The front and back ends are separated, and the back end mainly plays a supporting role.
 ***
 #### Instructions to launch from localhost:
 >(The following method is demonstrated in python 3 version)
